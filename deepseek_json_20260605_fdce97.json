@@ -1,0 +1,12 @@
+{
+  "name": "cloudflare-r2-upload",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231218.0"
+  }
+}

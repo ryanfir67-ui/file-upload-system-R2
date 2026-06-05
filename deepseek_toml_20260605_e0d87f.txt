@@ -1,0 +1,19 @@
+name = "file-upload-system"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+[[r2_buckets]]
+binding = "MY_BUCKET"
+bucket_name = "file-storage-10gb"
+preview_bucket_name = "file-storage-10gb-staging"
+
+[env.production]
+vars = { ENVIRONMENT = "production" }
+
+[env.production.r2_buckets]
+binding = "MY_BUCKET"
+bucket_name = "file-storage-10gb"
+
+# Batas maksimal upload 10 GB
+[limits]
+upload_size_limit = 10737418240  # 10 GB dalam bytes
